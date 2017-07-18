@@ -40,8 +40,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AchievementManagement.cs" />
+    <Compile Include="AddressManagement.cs" />
     <Compile Include="BaseManagement.cs" />
+    <Compile Include="BinnacleManagement.cs" />
+    <Compile Include="CategoryManagement.cs" />
+    <Compile Include="EventManagement.cs" />
+    <Compile Include="ExceptionManagement.cs" />
+    <Compile Include="InscriptionInfoManagement.cs" />
+    <Compile Include="InscriptionManagement.cs" />
+    <Compile Include="LikeManagement.cs" />
+    <Compile Include="MedicProfileManagement.cs" />
+    <Compile Include="NotificationManagement.cs" />
+    <Compile Include="PayInfoManagement.cs" />
+    <Compile Include="PaymentMethodManagement.cs" />
+    <Compile Include="PermissionManagement.cs" />
+    <Compile Include="ProductManagement.cs" />
+    <Compile Include="ProfileManagement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicationManagement.cs" />
+    <Compile Include="RangeManagement.cs" />
+    <Compile Include="RelationshipManagement.cs" />
+    <Compile Include="ResultManagement.cs" />
+    <Compile Include="RolManagement.cs" />
+    <Compile Include="RouteManagement.cs" />
+    <Compile Include="ScoreManagement.cs" />
+    <Compile Include="SettingManagement.cs" />
+    <Compile Include="SpectatorManagement.cs" />
+    <Compile Include="TeamManagement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SportLike.DataAccess\SportLike.DataAccess.csproj">
+      <Project>{79702563-1DCF-4E8A-9978-3E71A0F2FE8D}</Project>
+      <Name>SportLike.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SportLike.Entities\SportLike.Entities.csproj">
+      <Project>{60E830F8-4B7B-4284-9424-35B48188A13E}</Project>
+      <Name>SportLike.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

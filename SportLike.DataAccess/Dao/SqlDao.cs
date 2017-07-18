@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SportLife.DataAccess.Dao
+namespace SportLike.DataAccess.Dao
 {
     public class SqlDao
     {
@@ -18,7 +18,7 @@ namespace SportLife.DataAccess.Dao
             return _intance ?? (_intance = new SqlDao());
         }
 
-        private const string ConnectionString = "server=DAVID ; database=RCHINO_DB ; integrated security = true";
+        private const string ConnectionString = "database=SPORTLIKE_DB ; integrated security = true";
 
         public void ExecuteProcedure(SqlOperation sqlOperation)
         {

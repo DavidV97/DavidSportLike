@@ -40,18 +40,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Crud\CrudPayInfo.cs" />
+    <Compile Include="Crud\CrudRange.cs" />
+    <Compile Include="Crud\CrudTeam.cs" />
+    <Compile Include="Crud\CrudNotification.cs" />
+    <Compile Include="Crud\CrudPaymentMethod.cs" />
+    <Compile Include="Crud\CrudProduct.cs" />
+    <Compile Include="Crud\CrudAchievement.cs" />
+    <Compile Include="Crud\CrudAddress.cs" />
+    <Compile Include="Crud\CrudBinnacle.cs" />
+    <Compile Include="Crud\CrudCategory.cs" />
+    <Compile Include="Crud\CrudEvent.cs" />
     <Compile Include="Crud\CrudFactory.cs" />
+    <Compile Include="Crud\CrudInscriptionInfo.cs" />
+    <Compile Include="Crud\CrudInscription.cs" />
+    <Compile Include="Crud\CrudLike.cs" />
+    <Compile Include="Crud\CrudMedicProfile.cs" />
+    <Compile Include="Crud\CrudPermission.cs" />
+    <Compile Include="Crud\CrudProfile.cs" />
+    <Compile Include="Crud\CrudPublication.cs" />
+    <Compile Include="Crud\CrudRelationship.cs" />
+    <Compile Include="Crud\CrudResult.cs" />
+    <Compile Include="Crud\CrudRol.cs" />
+    <Compile Include="Crud\CrudRoute.cs" />
+    <Compile Include="Crud\CrudScore.cs" />
+    <Compile Include="Crud\CrudSetting.cs" />
+    <Compile Include="Crud\CrudSpectator.cs" />
     <Compile Include="Dao\SqlDao.cs" />
     <Compile Include="Dao\SqlOperation.cs" />
+    <Compile Include="Management\ExceptionManagement.cs" />
+    <Compile Include="Mapper\AchievementMapper.cs" />
+    <Compile Include="Mapper\AddressMapper.cs" />
+    <Compile Include="Mapper\BinnacleMapper.cs" />
+    <Compile Include="Mapper\CategoryMapper.cs" />
     <Compile Include="Mapper\EntityMapper.cs" />
+    <Compile Include="Mapper\EventMapper.cs" />
+    <Compile Include="Mapper\InscriptionMapper.cs" />
+    <Compile Include="Mapper\InscriptionInfoMapper.cs" />
     <Compile Include="Mapper\IObjectMapper.cs" />
     <Compile Include="Mapper\ISqlStaments.cs" />
+    <Compile Include="Mapper\LikeMapper.cs" />
+    <Compile Include="Mapper\MedicProfileMapper.cs" />
+    <Compile Include="Mapper\NotificationMapper.cs" />
+    <Compile Include="Mapper\PayInfoMapper.cs" />
+    <Compile Include="Mapper\PaymentMethodMapper.cs" />
+    <Compile Include="Mapper\PermissionMapper.cs" />
+    <Compile Include="Mapper\ProductMapper.cs" />
+    <Compile Include="Mapper\ProfileMapper.cs" />
+    <Compile Include="Mapper\PublicationMapper.cs" />
+    <Compile Include="Mapper\RangeMapper.cs" />
+    <Compile Include="Mapper\RelationshipMapper.cs" />
+    <Compile Include="Mapper\ResultMapper.cs" />
+    <Compile Include="Mapper\RolMapper.cs" />
+    <Compile Include="Mapper\RouteMapper.cs" />
+    <Compile Include="Mapper\ScoreMapper.cs" />
+    <Compile Include="Mapper\SettingMapper.cs" />
+    <Compile Include="Mapper\SpectatorMapper.cs" />
+    <Compile Include="Mapper\TeamMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SportLife.Entities\SportLife.Entities.csproj">
-      <Project>{60E830F8-4B7B-4284-9424-35B48188A13E}</Project>
-      <Name>SportLife.Entities</Name>
+    <ProjectReference Include="..\SportLike.Entities\SportLike.Entities.csproj">
+      <Project>{60e830f8-4b7b-4284-9424-35b48188a13e}</Project>
+      <Name>SportLike.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

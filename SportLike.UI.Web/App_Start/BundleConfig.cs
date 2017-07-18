@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace SportLife.UI.Web
+namespace SportLike.UI.Web
 {
     public class BundleConfig
     {

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SportLife.DataAccess.Dao
+namespace SportLike.DataAccess.Dao
 {
     public class SqlOperation
     {
@@ -14,8 +14,9 @@ namespace SportLife.DataAccess.Dao
         public string ProcedureName { get; set; }
         public List<SqlParameter> Parameters { get; set; }
 
-        public SqlOperation()
+        public SqlOperation(string procedureName)
         {
+            ProcedureName = procedureName;
             Parameters = new List<SqlParameter>();
         }
 
@@ -40,6 +41,24 @@ namespace SportLife.DataAccess.Dao
         public void AddDoubleParam(string paramName, double paramValue)
         {
             var param = new SqlParameter("@P_" + paramName, SqlDbType.Decimal)
+            {
+                Value = paramValue
+            };
+            Parameters.Add(param);
+        }
+
+        internal void AddDateParam(string paramName, DateTime paramValue)
+        {
+            var param = new SqlParameter("@P_" + paramName, SqlDbType.Date)
+            {
+                Value = paramValue
+            };
+            Parameters.Add(param);
+        }
+
+        public void AddBooleanParam(string paramName, Boolean paramValue)
+        {
+            var param = new SqlParameter("@P_" + paramName, SqlDbType.Bit)
             {
                 Value = paramValue
             };

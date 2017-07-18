@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace SportLife.UI.Web
+namespace SportLike.UI.Web
 {
     public class RouteConfig
     {
